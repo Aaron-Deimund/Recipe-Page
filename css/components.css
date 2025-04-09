@@ -1,3 +1,124 @@
-main{
-	color: red;
+/* Custom Properties and Presets from the Figma design file. */
+:root {
+	--White: hsl(0, 0%, 100%);
+
+	--Stone-100: hsl(30, 54%, 90%);
+	--Stone-150: hsl(30, 18%, 87%);
+	--Stone-600: hsl(30, 10%, 34%);
+	--Stone-900: hsl(24, 5%, 18%);
+	
+	--Brown-800: hsl(14, 45%, 36%);
+	
+	--Rose-800: hsl(332, 51%, 32%);
+	--Rose-50: hsl(330, 100%, 98%);
+
+	--space-50: 4px;
+	--space-100: 8px;
+	--space-150: 12px;
+	--space-200: 16px;
+	--space-300: 24px;
+	--space-400: 32px;
+	--space-500: 40px;
+	--space-600: 48px;
+	--space-1600: 128px;
+
+	/* Font Sizes */
+	--px-14: .875rem;
+	--px-16: 1rem;
+	--px-20: 1.25rem;
+	--px-24: 1.5rem;
+	--px-28: 1.75rem;
+	--px-40: 2.5rem;
+
+	--text-1_font-size: var(--px-40);
+	--text-1_font-weight: 500;
+	--text-1_font-weight_bold: 800;
+	--text-1_line-height: 100%;
+	--text-1_letter-spacing: 0;
+
+	--text-2_font-size: var(--px-28);
+	--text-2_font-weight: 500;
+	--text-2_font-weight_bold: 800;
+	--text-2_line-height: 100%;
+	--text-2_letter-spacing: 0;
+
+	--text-3_font-size: var(--px-20);
+	--text-3_font-weight: 500;
+	--text-3_font-weight_bold: 800;
+	--text-3_line-height: 100%;
+	--text-3_letter-spacing: 0;
+
+	--text-4_font-size: var(--px-16);
+	--text-4_font-weight: 500;
+	--text-4_font-weight_bold: 800;
+	--text-4_line-height: 150%;
+	--text-4_letter-spacing: 0;
+
+	--transition-time: .25s;
 }
+
+
+@font-face {
+	font-family: Young;
+	src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+	font-family: Outfit;
+	src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+.text-preset-1,
+.text-preset-1__bold{
+	font-family: 'Young', Georgia, 'Times New Roman', Times, serif;
+	color: var(--white);
+	font-size: var(--text-1_font-size);
+	font-weight: var(--text-1_font-weight);
+	line-height: var(--text-1_line-height);
+	letter-spacing: var(--text-1_letter-spacing);
+}
+
+.text-preset-1__bold{
+	font-weight: var(--text-1_font-weight_bold);
+}
+
+.text-preset-2,
+.text-preset-2__bold {
+	font-family: 'Young', Georgia, 'Times New Roman', Times, serif;
+	color: var(--white);
+	font-size: var(--text-2_font-size);
+	font-weight: var(--text-2_font-weight);
+	line-height: var(--text-2_line-height);
+	letter-spacing: var(--text-2_letter-spacing);
+}
+
+.text-preset-2__bold{
+	font-weight: var(--text-2_font-weight_bold);
+}
+
+.text-preset-3,
+.text-preset-3__bold {
+	font-family:'Outfit', Verdana, Geneva, Tahoma, sans-serif;
+	font-size: var(--text-3_font-size);
+	font-weight: var(--text-3_font-weight);
+	line-height: var(--text-3_line-height);
+	letter-spacing: var(--text-3_letter-spacing);
+}
+
+.text-preset-3__bold{
+	font-weight: var(--text-3_font-weight_bold);
+}
+
+.text-preset-4,
+.text-preset-4__bold {
+	font-family:'Outfit', Verdana, Geneva, Tahoma, sans-serif;
+	font-size: var(--text-4_font-size);
+	font-weight: var(--text-4_font-weight);
+	line-height: var(--text-4_line-height);
+	letter-spacing: var(--text-4_letter-spacing);
+}
+
+.text-preset-4__bold{
+	font-weight: var(--text-4_font-weight_bold);
+}
+/* End Presets */
