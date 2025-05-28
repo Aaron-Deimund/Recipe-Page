@@ -69,7 +69,8 @@
 }
 
 .text-preset-1,
-.text-preset-1__bold{
+.text-preset-1__bold,
+h1{
 	font-family: 'Young', Georgia, 'Times New Roman', Times, serif;
 	color: var(--white);
 	font-size: var(--text-1_font-size);
@@ -83,7 +84,8 @@
 }
 
 .text-preset-2,
-.text-preset-2__bold {
+.text-preset-2__bold,
+h2 {
 	font-family: 'Young', Georgia, 'Times New Roman', Times, serif;
 	color: var(--white);
 	font-size: var(--text-2_font-size);
@@ -110,7 +112,9 @@
 }
 
 .text-preset-4,
-.text-preset-4__bold {
+.text-preset-4__bold,
+p,
+.row {
 	font-family:'Outfit', Verdana, Geneva, Tahoma, sans-serif;
 	font-size: var(--text-4_font-size);
 	font-weight: var(--text-4_font-weight);
